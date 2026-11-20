@@ -2,11 +2,11 @@
 
 Intersect changed executable line numbers with supplied coverage to find untested changes.
 
-**Status:** implemented browser-local research prototype. Automated tests can be reproduced with the command below. Deployment status is recorded separately; a planned URL is not proof of a working deployment.
+**Status:** implemented browser-local research prototype. Automated tests can be reproduced with the command below. GitHub Pages deployed and browser smoke checks completed on 20 November 2026.
 
 ## Website
 
-Intended GitHub Pages address: https://royalpuskar.github.io/test-gap-map/
+Live website: https://royalpuskar.github.io/test-gap-map/
 
 ## Problem and approach
 
@@ -86,6 +86,8 @@ Relies on externally supplied line lists; does not measure coverage or decide wh
 The interface shares a portfolio design system, while this repository has its own domain engine, fixture, and tests. No accuracy, novelty, production-readiness, or 4K visual-test claim is made. Large-screen CSS is not a substitute for device testing.
 
 ## Validation
+
+Three local automated test cases passed on 20 November 2026. Live browser checks covered sample results, invalid-input errors, stale-export prevention, and reset. These checks do not establish exhaustive browser coverage.
 
 `test.mjs` checks domain outcomes and edge cases, deterministic behavior, input preservation, malformed roots, and size limits. GitHub Actions runs the same suite. Review the tests themselves to see exactly what is covered; passing these checks does not establish security or exhaustive correctness.
 
